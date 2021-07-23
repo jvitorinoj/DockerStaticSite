@@ -1,0 +1,65 @@
+[H[2J[3J[1mSecret:     [0m [95m1[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95maws.conf[0m
+[1mSecret Type:[0m [95mAWS Access Key[0m
+----------
+[92m1[0m:aws_access_key_id: 'ABCdddANCk9pap'
+[92m2[0m:aws_secret_access_key: "[41mPP109JjkLMnBc+oOpKJ27VDbMEDkELAlk99A7EFF[0m"
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (q)uit: [H[2J[3J[1mSecret:     [0m [95m2[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95maws.conf[0m
+[1mSecret Type:[0m [95mBase64 High Entropy String[0m
+----------
+[92m1[0m:aws_access_key_id: 'ABCdddANCk9pap'
+[92m2[0m:aws_secret_access_key: "[41mPP109JjkLMnBc+oOpKJ27VDbMEDkELAlk99A7EFF[0m"
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: [H[2J[3J[1mSecret:     [0m [95m3[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95maws.conf[0m
+[1mSecret Type:[0m [95mSecret Keyword[0m
+----------
+[92m1[0m:aws_access_key_id: 'ABCdddANCk9pap'
+[92m2[0m:aws_secret_access_key: "[41mPP109JjkLMnBc+oOpKJ27VDbMEDkELAlk99A7EFF[0m"
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: [H[2J[3J[1mSecret:     [0m [95m4[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95mconfig.ini[0m
+[1mSecret Type:[0m [95mSecret Keyword[0m
+----------
+[92m1[0m:[System A]
+[92m2[0m:url = "http://example.com"
+[92m3[0m:login = 'smith1'
+[92m4[0m:password = '[41mgre#p[0m'
+[92m5[0m:
+[92m6[0m:[System B]
+[92m7[0m:url = "https://contoso.com"
+[92m8[0m:login = "Admin"
+[92m9[0m:password = 'SuperSecretPassword'
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: [H[2J[3J[1mSecret:     [0m [95m5[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95mconfig.ini[0m
+[1mSecret Type:[0m [95mSecret Keyword[0m
+----------
+[92m4[0m:password = 'gre#p'
+[92m5[0m:
+[92m6[0m:[System B]
+[92m7[0m:url = "https://contoso.com"
+[92m8[0m:login = "Admin"
+[92m9[0m:password = '[41mSuperSecretPassword[0m'
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: [H[2J[3J[1mSecret:     [0m [95m6[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95mtest.nomad[0m
+[1mSecret Type:[0m [95mAWS Access Key[0m
+----------
+[92m1[0m:stats_service_aws_region: "us-east-44"
+[92m2[0m:stats_service_aws_access_key_id: "1QAZ2WSX3EDC4RFV"
+[92m3[0m:stats_service_aws_secret_access_key: "[41mPKLmMaPc99+a1JK+PLKLPLbMEDkELM1q2w3e4r5t[0m"
+[92m4[0m:stats_service_sts_role_arn: "arn:aws:iam::0005056144333:role/stats-service-role"
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: [H[2J[3J[1mSecret:     [0m [95m7[0m [1mof[0m [95m7[0m
+[1mFilename:   [0m [95mtest.nomad[0m
+[1mSecret Type:[0m [95mSecret Keyword[0m
+----------
+[92m1[0m:stats_service_aws_region: "us-east-44"
+[92m2[0m:stats_service_aws_access_key_id: "1QAZ2WSX3EDC4RFV"
+[92m3[0m:stats_service_aws_secret_access_key: "[41mPKLmMaPc99+a1JK+PLKLPLbMEDkELM1q2w3e4r5t[0m"
+[92m4[0m:stats_service_sts_role_arn: "arn:aws:iam::0005056144333:role/stats-service-role"
+----------
+Is this a secret that should be committed to this repository? (y)es, (n)o, (s)kip, (b)ack, (q)uit: Saving progress...
