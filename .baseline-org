@@ -1,0 +1,159 @@
+{
+  "version": "1.1.0",
+  "plugins_used": [
+    {
+      "name": "ArtifactoryDetector"
+    },
+    {
+      "name": "AWSKeyDetector"
+    },
+    {
+      "name": "AzureStorageKeyDetector"
+    },
+    {
+      "name": "Base64HighEntropyString",
+      "limit": 4.5
+    },
+    {
+      "name": "BasicAuthDetector"
+    },
+    {
+      "name": "CloudantDetector"
+    },
+    {
+      "name": "HexHighEntropyString",
+      "limit": 3.0
+    },
+    {
+      "name": "IbmCloudIamDetector"
+    },
+    {
+      "name": "IbmCosHmacDetector"
+    },
+    {
+      "name": "JwtTokenDetector"
+    },
+    {
+      "name": "KeywordDetector",
+      "keyword_exclude": ""
+    },
+    {
+      "name": "MailchimpDetector"
+    },
+    {
+      "name": "NpmDetector"
+    },
+    {
+      "name": "PrivateKeyDetector"
+    },
+    {
+      "name": "SlackDetector"
+    },
+    {
+      "name": "SoftlayerDetector"
+    },
+    {
+      "name": "SquareOAuthDetector"
+    },
+    {
+      "name": "StripeDetector"
+    },
+    {
+      "name": "TwilioKeyDetector"
+    }
+  ],
+  "filters_used": [
+    {
+      "path": "detect_secrets.filters.allowlist.is_line_allowlisted"
+    },
+    {
+      "path": "detect_secrets.filters.common.is_ignored_due_to_verification_policies",
+      "min_level": 2
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_indirect_reference"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_likely_id_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_lock_file"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_not_alphanumeric_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_potential_uuid"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_prefixed_with_dollar_sign"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_sequential_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_swagger_file"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_templated_secret"
+    }
+  ],
+  "results": {
+    "aws.conf": [
+      {
+        "type": "AWS Access Key",
+        "filename": "aws.conf",
+        "hashed_secret": "9e14b9a3dcb0bab0dbbf3f8cc8879b22f49c1b8b",
+        "is_verified": false,
+        "line_number": 2
+      },
+      {
+        "type": "Base64 High Entropy String",
+        "filename": "aws.conf",
+        "hashed_secret": "9e14b9a3dcb0bab0dbbf3f8cc8879b22f49c1b8b",
+        "is_verified": false,
+        "line_number": 2
+      },
+      {
+        "type": "Secret Keyword",
+        "filename": "aws.conf",
+        "hashed_secret": "9e14b9a3dcb0bab0dbbf3f8cc8879b22f49c1b8b",
+        "is_verified": false,
+        "line_number": 2
+      }
+    ],
+    "config.ini": [
+      {
+        "type": "Secret Keyword",
+        "filename": "config.ini",
+        "hashed_secret": "ae2045e8c6a8d00f9c2cf1e1fb99b6a88ad5f44b",
+        "is_verified": false,
+        "line_number": 4
+      },
+      {
+        "type": "Secret Keyword",
+        "filename": "config.ini",
+        "hashed_secret": "6c54b5c3c5f3e93afc004346ec96ddb88433b263",
+        "is_verified": false,
+        "line_number": 9
+      }
+    ],
+    "test.nomad": [
+      {
+        "type": "AWS Access Key",
+        "filename": "test.nomad",
+        "hashed_secret": "8f800c001c6b106fe29ac81538866cca790e1cdd",
+        "is_verified": false,
+        "line_number": 3
+      },
+      {
+        "type": "Secret Keyword",
+        "filename": "test.nomad",
+        "hashed_secret": "8f800c001c6b106fe29ac81538866cca790e1cdd",
+        "is_verified": false,
+        "line_number": 3
+      }
+    ]
+  },
+  "generated_at": "2021-07-22T22:17:46Z"
+}
