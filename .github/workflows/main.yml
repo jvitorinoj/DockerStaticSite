@@ -58,3 +58,16 @@ jobs:
           output: /github/workspace/reports
     # Project type. Eg: credscan, java, python, nodejs, depscan etc. Comma separated values allowed.
           #type: # optional
+
+
+      - name: Docker Hub Description agent
+        uses: peter-evans/dockerhub-description@v2
+      # The default readme is in the root of the repository but any file 
+      # can be used, example: readme-filepath: ./path/to/README.md
+        with: 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: akbar415/zabbix-teste
+          short-description: ${{ github.event.repository.description }}
+
+    
